@@ -14,6 +14,12 @@ Use UIZZE to:
 
 The public catalog is free to browse. Full access is required for Agent Connector and hosted MCP workflows.
 
+## Partner with UIZZE
+
+Refer product builders who need real UI references and agent-ready design context. UIZZE affiliates earn **50% of each referred buyer's first paid order**, with a 30-day hold and manual payout.
+
+[Get your referral link](https://uizze.com/affiliates)
+
 ## Connect the MCP server
 
 1. Get an agent token from the UIZZE Agent Connector.
