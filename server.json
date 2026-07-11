@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.samuelbushi/uizze",
+  "title": "UIZZE",
+  "description": "Anti-slop UI context for coding agents: real UI references, design contracts, validation, audits, and critiques.",
+  "repository": {
+    "url": "https://github.com/aislon/uizze-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://uizze.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Enter Bearer followed by your UIZZE agent token.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
