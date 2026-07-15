@@ -1,4 +1,4 @@
 interface:
-  display_name: "Catch AI UI Slop"
+  display_name: "Catch UI Slop"
   short_description: "Run an anti-slop UI finish gate"
-  default_prompt: "Use $ai-ui-slop-review to catch AI UI slop in this rendered interface before it ships."
+  default_prompt: "Use $ai-ui-slop-review to catch UI slop in this rendered interface before it ships."
