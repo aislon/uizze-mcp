@@ -4,19 +4,15 @@
 
 Codex can write the UI; UIZZE helps it stop shipping generic AI UI slop. UIZZE gives Codex real web and iOS interface references before implementation, then provides design contracts, validation, audits, and critiques. Claude Code and Cursor use the same hosted MCP workflow.
 
-## Stop AI UI slop with Agent Skills
+## Install the UIZZE anti-AI-UI-slop skill
 
-Build product UI with UIZZE evidence and finish gates:
-
-```bash
-npx skills add aislon/uizze-mcp --skill uizze-ui-research
-```
-
-Catch AI UI slop in rendered UI before it ships:
+Give Codex, Claude Code, or Cursor UIZZE's paid anti-slop workflow:
 
 ```bash
-npx skills add aislon/uizze-mcp --skill ai-ui-slop-review
+npx skills add https://uizze.com --skill anti-ai-ui-slop
 ```
+
+Existing `uizze-ui-research` and `ai-ui-slop-review` installs remain available for compatibility; new installs should use `anti-ai-ui-slop` from `uizze.com`.
 
 → [Read the anti-slop UI workflow](ANTI_SLOP_UI_WORKFLOW.md)
 
