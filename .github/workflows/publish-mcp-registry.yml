@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: read
-  id-token: write
 
 concurrency:
   group: mcp-registry-${{ github.event.release.tag_name || github.ref }}
@@ -53,9 +52,11 @@ jobs:
         run: |
           "$RUNNER_TEMP/mcp-publisher" validate server.json
 
-      - name: Authenticate with GitHub OIDC
+      - name: Authenticate as the legacy Registry owner
+        env:
+          MCP_GITHUB_TOKEN: ${{ secrets.MCP_GITHUB_TOKEN }}
         run: |
-          "$RUNNER_TEMP/mcp-publisher" login github-oidc
+          "$RUNNER_TEMP/mcp-publisher" login github
 
       - name: Publish the existing UIZZE listing
         run: |
